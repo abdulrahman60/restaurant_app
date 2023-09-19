@@ -9,7 +9,7 @@ class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView(
-      children: [DUMMY_CATEGORIES]
+      children: DUMMY_CATEGORIES
           .map((catData) => CategoryItem(catData.title))
           .toList(),
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
